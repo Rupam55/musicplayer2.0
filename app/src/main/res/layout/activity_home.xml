@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/gradient_list"
+    android:id="@+id/home"
+    tools:context=".HomeActivity">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:background="#91141414"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#ffffff"
+                    android:text="Player"
+                    android:textSize="40sp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="#ffffff"
+                    android:text="all songs"
+                    android:textSize="20sp"/>
+
+
+            </LinearLayout>
+
+
+
+
+    <RelativeLayout
+        android:layout_marginBottom="100dp"
+        android:layout_marginTop="90dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/list">
+
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:layout_margin="5dp"
+        card_view:cardCornerRadius="8dp"
+        >
+
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/listview"
+        >
+
+
+
+    </ListView>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/play"
+        android:background="#99141414"
+        android:layout_alignParentBottom="true"
+        >
+        
+        <SeekBar
+            android:layout_width="match_parent"
+            android:layout_marginRight="100dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_height="20dp"
+            android:id="@+id/seekbar"
+            />
+        
+        <Button
+            android:id="@+id/btnplay"
+            android:layout_marginTop="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/play" />
+
+        <Button
+            android:id="@+id/btnnext"
+            android:layout_marginRight="20dp"
+            android:layout_toRightOf="@+id/btnplay"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="35dp"
+            android:layout_marginBottom="20dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/next" />
+
+        <Button
+            android:id="@+id/btnback"
+
+            android:layout_marginLeft="20dp"
+            android:layout_toLeftOf="@+id/btnplay"
+            android:layout_marginRight="35dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/back" />
+
+        <Button
+            android:id="@+id/btplaylist"
+
+            android:layout_marginLeft="20dp"
+            android:layout_toLeftOf="@+id/btnback"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/sort" />
+
+        <Button
+            android:id="@+id/btnscreen"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/btnnext"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/ic_replay_black_24dp" />
+
+
+    </RelativeLayout>
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="45dp"
+        android:layout_marginRight="0dp"
+        fab:menu_animationDelayPerItem="55"
+        fab:menu_icon="@drawable/arrow"
+        fab:menu_backgroundColor="@android:color/transparent"
+        fab:menu_buttonSpacing="0dp"
+        fab:menu_colorNormal="#0190FE"
+        fab:menu_colorRipple="#8801FE"
+        fab:menu_colorPressed="#0122FE"
+        fab:menu_fab_size="normal"
+        fab:menu_labels_colorNormal="#0190FE"
+        fab:menu_labels_colorRipple="#8801FE"
+        fab:menu_labels_colorPressed="#0122FE"
+        fab:menu_labels_hideAnimation="@anim/fab_slide_out_to_right"
+        fab:menu_labels_maxLines="-1"
+        android:padding="8dp"
+        fab:menu_labels_position="left"
+        fab:menu_labels_showAnimation="@anim/fab_slide_in_from_right"
+        fab:menu_labels_showShadow="true"
+        fab:menu_labels_singleLine="false"
+        fab:menu_labels_textColor="#ffffff"
+        fab:menu_labels_textSize="15sp"
+        fab:menu_openDirection="up"
+        fab:menu_shadowColor="#66aff198"
+        fab:menu_shadowRadius="4dp"
+        fab:menu_shadowXOffset="1dp"
+        fab:menu_shadowYOffset="4dp"
+        fab:menu_showShadow="true"
+        >
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/bug"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/bug"
+            fab:fab_label="report bug"
+            />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/person"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/person"
+            fab:fab_label="about the developer"
+            />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/project"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/project"
+            fab:fab_label="about project"
+            />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/help"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/help"
+            fab:fab_label="help"
+            />
+
+
+    </com.github.clans.fab.FloatingActionMenu>
+
+</RelativeLayout>
